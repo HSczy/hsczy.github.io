@@ -22,8 +22,11 @@ jobs:
           persist-credentials: false
 
       # 生成静态文件
-      - uses: borales/actions-yarn@v2.3.0
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
         with:
+          node-version: '14'
+          cache: 'yarn'
           cmd: yarn install && yarn build
 
       # 部署到 GitHub Pages
