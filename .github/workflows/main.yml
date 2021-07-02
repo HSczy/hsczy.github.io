@@ -31,8 +31,10 @@ jobs:
           scope: '@octocat'
       - run: yarn install
       - run: yarn build
-
-
+      - name: Open Web Client Directory
+        run: |
+          ls -la
+          
       # 部署到 GitHub Pages
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3
