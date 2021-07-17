@@ -1,41 +1,23 @@
 module.exports = {
-  title: "陈震宇的个人博客",
-  locales: {
-    '/': {
-      lang: 'zh-CN'
-    }
-  },
-  description: '一个记录工作、代码的小站',
+  title: "",
+  description: '9点起床，9点睡觉，每天工作6个小时',
   dest: 'public',
   head: [
-    ['link', { rel: 'icon', href: '/favicon.ico' }],
+    ['link', { rel: 'icon', href: '/favicon.png' }],
     ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }]
   ],
   theme: 'reco',
   themeConfig: {
     nav: [
-      { text: 'Home', link: '/', icon: 'reco-home' },
-      { text: 'TimeLine', link: '/timeline/', icon: 'reco-date' },
-      { text: 'Docs', 
+      { text: '主页', link: '/', icon: 'reco-home' },
+      { text: '时间轴', link: '/timeline/', icon: 'reco-date' },
+      { text: '联系方式', 
         icon: 'reco-message',
         items: [
-          { text: 'vuepress-reco', link: '/docs/theme-reco/' }
-        ]
-      },
-      { text: 'Contact', 
-        icon: 'reco-message',
-        items: [
-          { text: 'GitHub', link: 'https://github.com/recoluan', icon: 'reco-github' }
+          { text: 'GitHub', link: 'https://github.com/HSczy', icon: 'reco-github' }
         ]
       }
     ],
-    sidebar: {
-      '/docs/theme-reco/': [
-        'theme',
-        'plugin',
-        'api'
-      ]
-    },  
     type: 'blog',
     // 博客设置
     blogConfig: {
@@ -49,37 +31,8 @@ module.exports = {
       }
     },
     friendLink: [
-      {
-        title: '午后南杂',
-        desc: 'Enjoy when you can, and endure when you must.',
-        email: '1156743527@qq.com',
-        link: 'https://www.recoluan.com'
-      },
-      {
-        title: 'vuepress-theme-reco',
-        desc: 'A simple and beautiful vuepress Blog & Doc theme.',
-        avatar: "https://vuepress-theme-reco.recoluan.com/icon_vuepress_reco.png",
-        link: 'https://vuepress-theme-reco.recoluan.com'
-      },
     ],
-    locales: {
-      '/': {
-        recoLocales: {
-          homeBlog: {
-            article: '美文', // 默认 文章
-            tag: '标识', // 默认 标签
-            category: '类别', // 默认 分类
-            friendLink: '友链' // 默认 友情链接
-          },
-          pagation: {
-            prev: '上一页',
-            next: '下一页',
-            go: '前往',
-            jump: '跳转至'
-          }
-        }
-      }
-    },
+    
     logo: '/logo.png',
     // 搜索设置
     search: true,
@@ -87,14 +40,14 @@ module.exports = {
     // 自动形成侧边导航
     sidebar: 'auto',
     // 最后更新时间
-    lastUpdated: 'Last Updated',
+    lastUpdated: '最近更新于',
     // 作者
     author: '陈震宇',
     // 作者头像
     authorAvatar: '/avatar.png',
     // 备案号
     // 项目开始时间
-    startYear: '2021'
+    startYear: '2021',
     /**
      * 密钥 (if your blog is private)
      */
