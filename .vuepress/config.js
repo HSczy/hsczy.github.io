@@ -4,13 +4,13 @@ module.exports = {
     // 作为特例，默认语言可以使用 '/' 作为其路径。
     '/': {
       lang: "zh-CN", // 将会被设置为 <html> 的 lang 属性
-      title: "学而思而行",
+      title: "Work For 996",
       description: '9点起床，9点睡觉，每天工作6个小时',
     }
   }, 
   dest: 'public',
   head: [
-    ['link', { rel: 'icon', href: '/favicon.png' }],
+    ['link', { rel: 'icon', href: '/favicon.ico' }],
     ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }]
   ],
   theme: 'reco',
@@ -20,6 +20,12 @@ module.exports = {
     nav: [
       { text: '主页', link: '/', icon: 'reco-home' },
       { text: '时间轴', link: '/timeline/', icon: 'reco-date' },
+      // { text: '归档', 
+      //   icon: 'reco-message',
+      //   items: [
+      //     { text: 'vuepress-reco', link: '/docs/theme-reco/' }
+      //   ]
+      // },
       {
         text: '联系方式',
         icon: 'reco-message',
