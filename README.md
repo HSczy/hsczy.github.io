@@ -1,7 +1,7 @@
 ---
 home: true
-heroText: 
-tagline: 
+heroText: Work For
+tagline: 9 AM Weakup -- 9 PM Sleep -- 6 Hours to Work
 # heroImage: /hero.png
 # heroImageStyle: {
 #   maxWidth: '600px',
@@ -15,10 +15,8 @@ tagline:
 # bgImage: "dan-gold-RyheD9cxYgM.jpg"
 bgImage: "eléonore-kemmel-8mY3XGmmTUo.jpg"
 bgImageStyle: {
-
   height: '450px',
   width: '100%',
-
   # maxWidth: '1000px',
   # display: block,
   # background-size: 100%,
